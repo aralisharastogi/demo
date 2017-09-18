@@ -1,9 +1,9 @@
-.main{
+.container{
   width: 500px;
   text-align: center;
   margin: 0 auto;
   border: 2px solid rgba(255, 0, 0, 0.59);
-  border-bottom: 0px;
+  border-bottom: 20px;
   margin-top: 20px;
   font-family: 'Times New Roman';
 }
@@ -15,9 +15,11 @@ h1{
   color:purple;
 }
 .addItem {
+  width: 100%;
 position: relative;
-padding-bottom: 0px;
-height: 50px;
+padding-bottom: 10px 0px;
+display: inline-block;
+margin: 0
 }
 .addText {
   width: 80%;
@@ -27,10 +29,9 @@ height: 50px;
   font-family: Arial;
 }
 .addItem button{
-  width: 50px;
-  height: 40px;
-  padding: 5px;
-  background-color: darkgray;
+  width: 10%;
+  padding: 10px 0px;
+  display: inline-block;
 }
 ul {
   list-style: none;
@@ -51,4 +52,9 @@ span{
   position: relative;
   float: right;
   margin-right: 10px;
+}
+input, select {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0px;
 }

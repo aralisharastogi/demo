@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChange } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  items =  [ 'Angular 4', 'React', 'Underscore' ];
-  newItem = '';
-  pushItem = function() {
-    if (this.newItem !== '') {
-      this.items.push(this.newItem);
-      this.newItem = '';
-    }
-  };
-  removeItem = function(index) {
-    this.items.splice(index, 1);
+  form;
 
-  };
+  ngOnInit() {
+    this.form = new FormGroup ({
+      firstname: new FormControl(''),
+      lastname: new FormControl(''),
+      languages: new FormControl(' '),
+    }); }
+ onSubmit = function(user) {
+  console.log(user);
+};
 }
