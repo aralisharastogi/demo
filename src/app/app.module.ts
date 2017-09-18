@@ -7,14 +7,18 @@ import { RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { MemberComponent } from './member/member.component';
-import { SortPipe } from './app.sort';
+import { SortPipe } from './pipes/pipe.sort';
+import { FormComponent } from './form/form.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
     SortPipe,
     AppComponent,
     ProductComponent,
-    MemberComponent
+    MemberComponent,
+    FormComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,14 @@ import { SortPipe } from './app.sort';
       {
         path: 'product',
         component: ProductComponent
+      },
+      {
+        path: 'form',
+        component: FormComponent
+      },
+      {
+        path: 'pipes',
+        component: PipesComponent
       }
     ])
   ],

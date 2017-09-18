@@ -1,22 +1,17 @@
 <p>
-  {{variable}} works!
+    {{variable}} works!
 </p>
 <h1>
     {{title}}
 </h1>
-<a routerLink="/member">Member</a>
-<a routerLink="/product">Product</a>
-<br>
-<router-outlet></router-outlet>
-<br>
-{{obj.name}}
+<br> {{obj.name}}
 <br>
 <ul>
-    <li *ngFor= "let i of arr">{{i}}</li> 
+    <li *ngFor="let i of arr">{{i}}</li>
 </ul>
 <br>
-<p *ngIf= "isTrue; then firstTemplate else secondTemplate">Hello</p>
+<p *ngIf="isTrue; then firstTemplate else secondTemplate">Hello</p>
 <ng-template #firstTemplate>This is first</ng-template>
 <ng-template #secondTemplate>This is second</ng-template>
 <br>
-<p *ngIf= "myName == 'Alisha'">True</p>
+<p *ngIf="myName == 'Alisha'">True</p>

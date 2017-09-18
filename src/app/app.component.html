@@ -1,23 +1,6 @@
 <a routerLink="/member">Member</a>
 <a routerLink="/product">Product</a>
+<a routerLink="/form">Form</a>
+<a routerLink="/pipes">Pipes</a>
 <br>
 <router-outlet></router-outlet>
-<br>
-
-<form class = "container"
-    [formGroup] = "Form"
-    (ngSubmit) = " onSubmit (form.value) ">
-    <h1>User Form</h1>
-    <input type = "text" name = "firstname" placeholder = "firstname" formControlName="firstName">
-    <br>
-    <input type = "text" name = "lastname" placeholder = "lastname" formControlName="lastName">
-    <br>
-    <select name = "language" placeholder = "language"  formControlName="language">
-    <option value = " C++ " >C++</option>
-    <option value = " Java " >Java</option>
-    <option value = " Angular " >Angular</option>
-    </select>
-
-    <input type = "submit" value = "submit">
-    </form>>
-
